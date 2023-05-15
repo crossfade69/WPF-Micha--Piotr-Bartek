@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,9 +23,18 @@ using System.Threading.Tasks;
 
         return null;
     }
-    public List<Game> GetUserGames() 
+    public List<Game> GetUserGames(List<int> ids) 
     {
-
+        List<Game> currGames = new List<Game>();
+        foreach(int id in ids)
+        {
+            foreach(Game game in allGames)
+            {
+                if(game.id==id)
+                currGames.Add(game);
+            }
+        }
+        return currGames;
     }
     
 
