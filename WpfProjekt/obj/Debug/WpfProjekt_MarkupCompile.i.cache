@@ -4,17 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
+C:\Users\mrcro\Desktop\WpfProjekt\WPF-Micha--Piotr-Bartek\WpfProjekt\obj\Debug\
+=======
 C:\Users\Bartek\Documents\GitHub\WPF-Micha--Piotr-Bartek\WpfProjekt\obj\Debug\
+>>>>>>> f14e56ae281b9f5b7cbf66dade9392a3edb7fbb0
 WpfProjekt
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
+C:\Users\mrcro\Desktop\WpfProjekt\WPF-Micha--Piotr-Bartek\WpfProjekt\App.xaml
+61516511997
+
+14495584579
+=======
 C:\Users\Bartek\Documents\GitHub\WPF-Micha--Piotr-Bartek\WpfProjekt\App.xaml
 5-1961022272
 
 171497914424
+>>>>>>> f14e56ae281b9f5b7cbf66dade9392a3edb7fbb0
 13-1310406943
-MainWindow.xaml;MVVM\View\DiscoveryV.xaml;MVVM\View\HomeView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
+LoginWindow.xaml;MainWindow.xaml;MVVM\View\DiscoveryV.xaml;MVVM\View\HomeView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
 
 False
 

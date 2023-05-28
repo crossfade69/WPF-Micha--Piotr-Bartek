@@ -46,3 +46,4 @@ C:\Users\mrcro\Desktop\WpfProjekt\WPF-Micha--Piotr-Bartek\WpfProjekt\obj\Debug\W
 C:\Users\mrcro\Desktop\WpfProjekt\WPF-Micha--Piotr-Bartek\WpfProjekt\obj\Debug\WpfProjekt.csproj.CoreCompileInputs.cache
 C:\Users\mrcro\Desktop\WpfProjekt\WPF-Micha--Piotr-Bartek\WpfProjekt\obj\Debug\WpfProjekt.exe
 C:\Users\mrcro\Desktop\WpfProjekt\WPF-Micha--Piotr-Bartek\WpfProjekt\obj\Debug\WpfProjekt.pdb
+C:\Users\mrcro\Desktop\WpfProjekt\WPF-Micha--Piotr-Bartek\WpfProjekt\obj\Debug\LoginWindow.g.cs

@@ -22,7 +22,7 @@ namespace WpfProjekt
     {
         public MainWindow()
         {
-            InitializeComponent();
+
         }
 
         private void CloseButton_Click(object sender, RoutedEventArgs e)
@@ -59,6 +59,11 @@ namespace WpfProjekt
         private void Border_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             isDragging = false;
+        }
+
+        private void WindowDrag(object sender, MouseButtonEventArgs e) 
+        {
+            DragMove();
         }
 
         private void Border_MouseMove(object sender, MouseEventArgs e)
