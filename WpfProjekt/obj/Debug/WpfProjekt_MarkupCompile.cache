@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Bartek\Documents\GitHub\WPF-Micha--Piotr-Bartek\WpfProjekt\obj\Debug\
+C:\Users\mrcro\Desktop\WPF-Micha--Piotr-Bartek-main\WpfProjekt\obj\Debug\
 WpfProjekt
 none
 false
 DEBUG;TRACE
-C:\Users\Bartek\Documents\GitHub\WPF-Micha--Piotr-Bartek\WpfProjekt\App.xaml
-5-1961022272
+C:\Users\mrcro\Desktop\WPF-Micha--Piotr-Bartek-main\WpfProjekt\App.xaml
+10-1057728768
 
-13-1243000312
+25-1442766363
 13-1310406943
-MainWindow.xaml;MVVM\View\DiscoveryV.xaml;MVVM\View\HomeView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
+EditProfWindow.xaml;MainWindow.xaml;MVVM\View\DiscoveryV.xaml;MVVM\View\GameView.xaml;MVVM\View\HomeView.xaml;MVVM\View\LoginWindow.xaml;MVVM\View\ProfileView.xaml;MVVM\View\ShopView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
 
-True
+False
 

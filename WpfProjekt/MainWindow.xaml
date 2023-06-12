@@ -9,9 +9,16 @@
         mc:Ignorable="d"
         Height="600" Width="920"
         WindowStyle = "None"
-        ResizeMode="CanResize"
-        Background="Transparent"
+        ResizeMode="CanResize" 
+        MouseLeftButtonDown="WindowDrag"
+        Background="#272537"
         AllowsTransparency="True">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
+
+
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
@@ -43,108 +50,85 @@
         </Style>
     </Window.Resources>
 
-
-    <Border Background="#272537" CornerRadius="20"
-            MouseLeftButtonDown="Border_MouseLeftButtonDown"
-            MouseLeftButtonUp="Border_MouseLeftButtonUp"
-            MouseMove="Border_MouseMove">
-
-
+    <Grid>
         <Grid>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="200"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="75"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
 
-
-                <TextBlock Text="Elysian"
+            <TextBlock Text="Elysian"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Left"
                     Foreground="White"
                     FontSize="22"
                     Margin="20,0,0,0"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"  Width="120">
 
                 <!-- Minimize button -->
-                <Button Grid.Column="1"
+                <Button
                     Width="30" Height="20"
-                    Margin="0,5,70,5"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Right"
                     Style="{StaticResource WindowButtonStyle}"
-                    Click="MinimizeButton_Click" RenderTransformOrigin="0.487,0.535">
+                    Click="MinimizeButton_Click" >
                     <Path Data="M 0,5 L 30,5"
                         Stroke="White"
                         StrokeThickness="2"/>
                 </Button>
-
                 <!-- Maximize button -->
-                <Button Grid.Column="1"
+                <Button 
                     Width="30" Height="20"
-                    Margin="0,5,39,5"
                     VerticalAlignment="Center"
-                    HorizontalAlignment="Right"
+                    HorizontalAlignment="Left"
                     Style="{StaticResource WindowButtonStyle}"
                     Click="MaximizeButton_Click">
                     <Path Data="M 0,0 L 0,15 L 15,15 L 15,0 Z"
                         Stroke="White"
                         StrokeThickness="2"/>
                 </Button>
-
                 <!-- Close button -->
-                <Button Grid.Column="1"
-                    Width="30" Height="20"
-                    Margin="0,5,8,5"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Right"
-                    Style="{StaticResource WindowButtonStyle}"
-                    Click="CloseButton_Click">
+                <Button
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Right"
+                            Width="30" Height="20"
+                            Style="{StaticResource WindowButtonStyle}"
+                            Click="CloseButton_Click">
                     <Path Data="M 0,0 L 15,15 M 15,0 L 0,15"
-                        Stroke="White"
-                        StrokeThickness="2"/>
+                                Stroke="White"
+                                StrokeThickness="2"/>
                 </Button>
+            </StackPanel>
 
-                <StackPanel Grid.Row="1">
-                    <RadioButton Content="Home"
+            <StackPanel Grid.Row="1"  HorizontalAlignment="Left"
+                        Width="160">
+                <RadioButton Content="Home"
                         Height="50"
                         Foreground="White"
                         FontSize="14"
                         Style="{StaticResource MenuButtonTheme}"
                         IsChecked="True"
                         Command="{Binding HomeViewCommand}"/>
-                    <RadioButton Content="Discovery"
+                <RadioButton Content="Shop"
                         Height="50"
                         Foreground="White"
                         FontSize="14"
                         Style="{StaticResource MenuButtonTheme}"
-                        Command="{Binding DisViewCommand}"/>
-                    <RadioButton Content="Feature"
+                        Command="{Binding ShopViewCommand}"/>
+                <RadioButton Content="Profile"
                         Height="50"
                         Foreground="White"
                         FontSize="14"
-                        Style="{StaticResource MenuButtonTheme}"/>
+                        Style="{StaticResource MenuButtonTheme}"
+                        Command="{Binding ProfileViewCommand}"/>
+            </StackPanel>
 
-                </StackPanel>
+            <ContentControl Grid.Row="1"
+                    HorizontalAlignment="Stretch"
+                    Content="{Binding CurrentView}" Margin="165,0,0,0" Width="755"/>
 
-                <TextBox Width="250"
-                    Height="40"
-                    VerticalContentAlignment="Center"
-                    HorizontalAlignment="Left"
-                    Margin="5"
-                    Grid.Column="1"
-                    Style="{StaticResource ModernTextBox}"/>
-
-                <ContentControl Grid.Row="1"
-                    Grid.Column="1"
-                    Margin="10"
-                    Content="{Binding CurrentView}"/>
-            </Grid>
         </Grid>
-    </Border>
+    </Grid>
 
 
 </Window>

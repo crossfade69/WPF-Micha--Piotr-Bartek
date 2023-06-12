@@ -50,6 +50,11 @@ namespace WpfProjekt
         private bool isDragging;
         private Point startPoint;
 
+        private void WindowDrag(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
+
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             isDragging = true;
